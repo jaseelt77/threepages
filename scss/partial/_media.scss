@@ -125,7 +125,8 @@ section{
 }
 @media (max-width: $r-768){
     .header{
-       
+       display: flex;
+       align-items: center;
         #hamberger-menu-btn{
             display: none;
         }

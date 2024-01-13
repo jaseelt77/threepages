@@ -739,6 +739,10 @@ footer .footer-wrap .section-two a:hover {
   }
 }
 @media (max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
   .header #hamberger-menu-btn {
     display: none;
   }
