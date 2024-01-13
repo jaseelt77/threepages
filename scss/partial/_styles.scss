@@ -42,7 +42,16 @@ img{
     align-items: center;
     justify-content: space-between;
     padding: 1rem 6%;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 6%;
+    z-index: 1000;
+    background: #fff;
+    &.active {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      }
     .navbar-menu{
         display: flex;
         align-items: center;
@@ -81,6 +90,8 @@ img{
             display: none;
          }
     }
+    
+
  }
  @keyframes reveal {
     0% {
@@ -91,9 +102,9 @@ img{
     }
   }
  .home__banner{
+    margin-top: 130px;
     position: relative;
     width: 100%;
-    
     .row {
         margin-top: 1.5rem;
         display: flex;
@@ -620,6 +631,7 @@ footer{
 
 //ourstory page
 .our-story{
+    margin-top: 60px;
     position: relative;
     img{width: 100%;}
     &::before{

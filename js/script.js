@@ -24,5 +24,13 @@ document.querySelector('#close-navbar').onclick = () =>{
 $( document ).ready(function() {
   // AOS.init();
   AOS.init({disable: 'mobile'});
+  
 });
+window.onload = () => {
+  if(window.scrollY > 0) {
+      document.querySelector('.header').classList.add('active');
 
+  } else{
+      document.querySelector('.header').classList.remove('active');
+  }
+};

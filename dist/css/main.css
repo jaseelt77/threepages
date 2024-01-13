@@ -29,6 +29,16 @@ ul, li {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 6%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 6%;
+  z-index: 1000;
+  background: #fff;
+}
+.header.active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 .header .navbar-menu {
   display: flex;
@@ -75,6 +85,7 @@ ul, li {
   }
 }
 .home__banner {
+  margin-top: 130px;
   position: relative;
   width: 100%;
 }
@@ -574,6 +585,7 @@ footer .footer-wrap .section-two a:hover {
 }
 
 .our-story {
+  margin-top: 60px;
   position: relative;
 }
 .our-story img {
