@@ -573,10 +573,55 @@ footer .footer-wrap .section-two a:hover {
   margin-right: 15px;
 }
 
+.our-story {
+  position: relative;
+}
+.our-story img {
+  width: 100%;
+}
+.our-story::before {
+  left: -100px;
+  content: "";
+  width: 100%;
+  background: url(../assets/images/shadow-banner.png);
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  top: 128px;
+  /* transform: rotate(202deg); */
+  background-size: contain;
+}
+
+.story_content {
+  padding-top: 95px;
+}
+.story_content .story-image {
+  max-width: 1120px;
+  margin: 0px auto;
+}
+.story_content .story-image img {
+  width: 100%;
+}
+.steps_item__two h3, .steps_item h3 {
+  font-size: 2.125rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-family: Urbanist;
+  font-weight: 800;
+  line-height: 1.29;
+  color: #ff703f;
+  margin-bottom: 0;
+}
+
 .container {
   max-width: 90%;
   margin: 0 auto;
   padding: 0 1.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media (max-width: 1200px) {

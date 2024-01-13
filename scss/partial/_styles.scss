@@ -617,3 +617,48 @@ footer{
         margin-right: 15px;
     }
 }
+
+//ourstory page
+.our-story{
+    position: relative;
+    img{width: 100%;}
+    &::before{
+        left: -100px;
+        content: "";
+        width: 100%;
+        background: url(../assets/images/shadow-banner.png);
+        position: absolute;
+        height: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        top: 128px;
+        /* transform: rotate(202deg); */
+        background-size: contain;
+    }
+
+}
+
+.story_content{
+    padding-top: 95px;
+    .story-image{
+        max-width: 1120px;
+        margin: 0px auto;
+      
+        img{width: 100%;}
+
+        h2{
+
+        }
+    }
+}
+.steps_item__two,.steps_item {
+
+    h3{
+        @include titleText(2.125rem);
+        font-family: Urbanist;
+        font-weight: 800;
+        line-height: 1.29;
+        color: $orange;
+        margin-bottom: 0;
+    }
+}
