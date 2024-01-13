@@ -879,5 +879,6 @@ footer .footer-wrap .section-two a:hover {
   }
   footer .footer-wrap .section-two {
     margin-top: 1.5rem;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
