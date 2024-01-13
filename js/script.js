@@ -22,6 +22,7 @@ document.querySelector('#close-navbar').onclick = () =>{
 // })
 
 $( document ).ready(function() {
-  AOS.init();
+  // AOS.init();
+  AOS.init({disable: 'mobile'});
 });
 
