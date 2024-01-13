@@ -54,17 +54,22 @@ img{
       }
     .navbar-menu{
         display: flex;
-        align-items: center;
+       
         .navbar{
             padding-right: 1.25rem;
+            display: flex;
+            align-items: center;
             a{
                 font-size: 1.125rem;
                 color: $black;
-                text-transform: uppercase;
-                margin: 0 1rem;
-                letter-spacing: 0.113rem;
+                text-transform: capitalize;
+                text-decoration: none;
+                padding: 12px 1rem;
+                display: block;
+                transition: all 0.6s ease-out;
                 &:hover{
                     color: $orange;
+                    background-color: $navhover;
                 }
             } 
 
@@ -80,7 +85,38 @@ img{
                    transform: rotate(90deg);
                 }
              }
+             .dropdown {
+                position: relative;
+                display: inline-block;
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #fff;
+                    min-width: 160px;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    a {
+                        color: $black;
+                        padding: 12px 1rem;
+                        text-decoration: none;
+                        display: block;
+                        transition: all 0.6s ease-out;
+                        &:hover {
+                            color: $orange;
+                            background-color: $navhover;
+                            border-radius: 0;
+                            
+                        }
+                    }
+                }
+                &:hover {
+                    .dropdown-content {
+                        display: block;
+                    }
+                }
+            }
         }
+       
             .icons{
                 .fa-bars{
                     font-size: 1.5rem;
