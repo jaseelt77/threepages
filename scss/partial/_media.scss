@@ -308,8 +308,12 @@ section{
                 width: 130px;
             }
             .section-two{
+                
                 margin-top: 1.5rem;
                 flex-direction: column;
+                a{
+                    padding: 0;
+                }
             }
         }
     }

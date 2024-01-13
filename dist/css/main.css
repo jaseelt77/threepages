@@ -881,4 +881,7 @@ footer .footer-wrap .section-two a:hover {
     margin-top: 1.5rem;
     flex-direction: column;
   }
+  footer .footer-wrap .section-two a {
+    padding: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
