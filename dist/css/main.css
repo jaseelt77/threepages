@@ -775,6 +775,9 @@ footer .footer-wrap .section-two a:hover {
     text-align: center;
     font-size: 3rem;
   }
+  .header .navbar-menu #menu-btn i {
+    font-size: 4rem;
+  }
   .home__banner {
     position: relative;
     width: 100%;
