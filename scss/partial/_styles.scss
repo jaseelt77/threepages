@@ -690,10 +690,8 @@ footer{
 }
 
 .story_content{
-    &:not(:nth-child(2)){
-        padding-top: 95px;
-    }
    
+    padding-top: 95px;
     position: relative;
     .story-image{
         max-width: 950px;
@@ -740,6 +738,7 @@ footer{
 }
 .story-social_sec{
 padding-bottom: 50px;
+padding-top: 50px;
 }
 .steps_item__two,.steps_item {
 
