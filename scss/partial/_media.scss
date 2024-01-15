@@ -173,23 +173,25 @@ section{
     .home__banner{
         position: relative;
         width: 100%;
-        
+        margin-top: 50px;
         .row {
-       flex-direction: column;
-       .content{
-        h1{
-            font-size: 45px;
-            width: 100%;
-        }
-       }
-       .content__image{
-        img{
-            width: 100%;
-        }
-        &::before{
-            display: none;
-        }
-       }
+          flex-direction: column;
+          .content{
+            h1{
+                font-size: 45px;
+                width: 100%;
+            }
+           }
+           .content__image{
+                img{
+                    width: 100%;
+                }
+                &::before{
+                    display: none;
+                }
+            }
+            .headline-image{width: 100%;}
+            .triangle-down,.circle-image,.right-image{display: none;}
         }
     
     }

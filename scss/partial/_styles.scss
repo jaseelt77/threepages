@@ -203,6 +203,7 @@ img{
             top: 0;
             bottom: 27px;
             max-width: 120px;
+            width: 100%;
         }
     }
     .right-image{
@@ -212,6 +213,7 @@ img{
             position: absolute;
             right: -46px;
             z-index: -1;
+            width: 100%;
         }
         
     }
@@ -222,6 +224,7 @@ img{
         img{
             max-width: 265px;
            transform: translate(95px, -2px);
+           width: 100%;
         }
     }
     .headline-title{
@@ -256,6 +259,7 @@ img{
             position: relative;
             max-width: 400px;
             object-fit: contain;
+            width: 100%;
         }
 
     }
