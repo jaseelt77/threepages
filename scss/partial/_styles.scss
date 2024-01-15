@@ -142,7 +142,7 @@ img{
     }
   }
  .home__banner{
-    margin-top: 130px;
+    margin-top: 150px;
     position: relative;
     width: 100%;
     .row {
@@ -153,9 +153,11 @@ img{
         justify-content: center;
         /* overflow: hidden; */
         // flex-wrap: wrap;
+        position: relative;
         width: 100%;
     .content{
         position: relative;
+        flex: 1 0;
        h1{
         width: 600px;
         font-family: Urbanist;
@@ -168,37 +170,92 @@ img{
         }
         }
 
-        &::before{
-            content: "";
-            background: url(../assets/images/img-1.jpg);
+        // &::before{
+        //     content: "";
+        //     background: url(../assets/images/img-1.jpg);
+        //     position: absolute;
+        //     top: -86px;
+        //     right: -20px;
+        //     min-width: 836px;
+        //     height: 583px;
+        //     object-fit: contain;
+        //     z-index: -1;
+        //     background-repeat: no-repeat;
+        // }
+    }
+
+    .headline-image{
+        img{
+           
+            max-width: 450px;
+            top: 44px;
             position: absolute;
-            top: -86px;
-            right: -20px;
-            min-width: 836px;
-            height: 583px;
-            object-fit: contain;
+            right: -46px;
             z-index: -1;
-            background-repeat: no-repeat;
+            bottom: -96px;
+          }
+    }
+    .circle-image{
+        position: absolute;
+        top: 0;
+        img{
+            transform: translate(94px, -60px);
+            top: 0;
+            bottom: 27px;
+            max-width: 120px;
+        }
+    }
+    .right-image{
+        img{
+            max-width: 120px;
+            top: 7px;
+            position: absolute;
+            right: -46px;
+            z-index: -1;
+        }
+        
+    }
+
+    .triangle-down{
+        position: absolute;
+        bottom: 0;
+        img{
+            max-width: 265px;
+           transform: translate(95px, -2px);
+        }
+    }
+    .headline-title{
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        transform: translate(-205px, 0);
+        img{
+            object-fit: contain;
+            max-width: 100%;
         }
     }
     .content__image {
-       position: relative;
-            &::before{
-                content: "";
-                min-width: 100%;
-                background: url(../assets/images/shadow__right.png);
-                position: absolute;
-                height: 100%;
-                z-index: -1;
-                transform: translate(128px, 86px);
-                background-repeat: no-repeat;
-            }
+        position: relative;
+        flex: 1 0;
+        display: flex;
+        justify-content: end;
+            // &::before{
+            //     content: "";
+            //     min-width: 100%;
+            //     // background: url(../assets/images/shadow__right.png);
+            //     background: url(../assets/images/assets/shadow.png);
+            //     position: absolute;
+            //     height: 100%;
+            //     z-index: -1;
+            //     transform: translate(128px, 86px);
+            //     background-repeat: no-repeat;
+            // }
  
-        img{
+        img{   
             position: relative;
-            width: 672px;
+            max-width: 400px;
             object-fit: contain;
-            right: 31px;
         }
 
     }

@@ -11,9 +11,9 @@ $r-1366: 1366px;
 section{
     padding:4rem 5%;
  }
- html{
-    font-size: 55%;
- }
+//  html{
+//     font-size: 55%;
+//  }
 
  .header{
     padding:2rem;
@@ -124,6 +124,9 @@ section{
    }
 }
 @media (max-width: $r-768){
+    .animated {
+        animation: none !important;
+    }
     .header{
        display: flex;
        align-items: center;

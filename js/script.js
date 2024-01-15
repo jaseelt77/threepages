@@ -23,7 +23,12 @@ document.querySelector('#close-navbar').onclick = () =>{
 
 $( document ).ready(function() {
   // AOS.init();
-  AOS.init({disable: 'mobile'});
+  AOS.init({
+    disable: function() {
+      var maxWidth = 800;
+      return window.innerWidth < maxWidth;
+    }
+  });
   
 });
 window.onload = () => {

@@ -119,7 +119,7 @@ ul, li {
   }
 }
 .home__banner {
-  margin-top: 130px;
+  margin-top: 150px;
   position: relative;
   width: 100%;
 }
@@ -130,10 +130,12 @@ ul, li {
   align-items: center;
   justify-content: center;
   /* overflow: hidden; */
+  position: relative;
   width: 100%;
 }
 .home__banner .row .content {
   position: relative;
+  flex: 1 0;
 }
 .home__banner .row .content h1 {
   width: 600px;
@@ -145,36 +147,60 @@ ul, li {
 .home__banner .row .content h1 span {
   display: block;
 }
-.home__banner .row .content::before {
-  content: "";
-  background: url(../assets/images/img-1.jpg);
+.home__banner .row .headline-image img {
+  max-width: 450px;
+  top: 44px;
   position: absolute;
-  top: -86px;
-  right: -20px;
-  min-width: 836px;
-  height: 583px;
-  object-fit: contain;
+  right: -46px;
   z-index: -1;
-  background-repeat: no-repeat;
+  bottom: -96px;
+}
+.home__banner .row .circle-image {
+  position: absolute;
+  top: 0;
+}
+.home__banner .row .circle-image img {
+  transform: translate(94px, -60px);
+  top: 0;
+  bottom: 27px;
+  max-width: 120px;
+}
+.home__banner .row .right-image img {
+  max-width: 120px;
+  top: 7px;
+  position: absolute;
+  right: -46px;
+  z-index: -1;
+}
+.home__banner .row .triangle-down {
+  position: absolute;
+  bottom: 0;
+}
+.home__banner .row .triangle-down img {
+  max-width: 265px;
+  transform: translate(95px, -2px);
+}
+.home__banner .row .headline-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: translate(-205px, 0);
+}
+.home__banner .row .headline-title img {
+  object-fit: contain;
+  max-width: 100%;
 }
 .home__banner .row .content__image {
   position: relative;
-}
-.home__banner .row .content__image::before {
-  content: "";
-  min-width: 100%;
-  background: url(../assets/images/shadow__right.png);
-  position: absolute;
-  height: 100%;
-  z-index: -1;
-  transform: translate(128px, 86px);
-  background-repeat: no-repeat;
+  flex: 1 0;
+  display: flex;
+  justify-content: end;
 }
 .home__banner .row .content__image img {
   position: relative;
-  width: 672px;
+  max-width: 400px;
   object-fit: contain;
-  right: 31px;
 }
 
 [data-aos=my-fade-up] {
@@ -722,9 +748,6 @@ footer .footer-wrap .section-two a:hover {
   section {
     padding: 4rem 5%;
   }
-  html {
-    font-size: 55%;
-  }
   .header {
     padding: 2rem;
   }
@@ -787,6 +810,9 @@ footer .footer-wrap .section-two a:hover {
   }
 }
 @media (max-width: 768px) {
+  .animated {
+    animation: none !important;
+  }
   .header {
     display: flex;
     align-items: center;
