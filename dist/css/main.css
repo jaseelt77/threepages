@@ -187,6 +187,9 @@ ul, li {
 .home__banner .row .slide_down img {
   width: 35px;
 }
+.home__banner .row .slide_down:hover {
+  color: #ff703f;
+}
 @keyframes jumpInfinite {
   0% {
     margin-top: 0;
