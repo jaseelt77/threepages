@@ -303,6 +303,11 @@ section{
             font-size: 2rem;
         }
     }
+    .story_content{
+        .story-shadow, .story-img-shadow{
+        display: none;
+        }
+    }
 
     footer{
         .footer-wrap{
