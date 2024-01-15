@@ -217,7 +217,18 @@ img{
         }
         
     }
-
+    .slide_down{
+        position: absolute;
+        right: -50px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transform: rotate(90deg);
+        top: 230px;
+        img{
+            width: 35px;
+        }
+    }
     .triangle-down{
         position: absolute;
         bottom: 0;
