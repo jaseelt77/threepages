@@ -259,7 +259,6 @@ ul, li {
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  /* line-height: 3.42; */
   letter-spacing: 1.9px;
   text-align: center;
   color: #000000;
@@ -379,7 +378,7 @@ ul, li {
   margin-left: 10px;
 }
 .steps_item .grids .item-image h4 {
-  font-size: 2.125rem;
+  font-size: 2rem;
   font-weight: 500;
   text-transform: capitalize;
   font-family: Urbanist;
@@ -389,9 +388,9 @@ ul, li {
   margin-bottom: 1.688rem;
 }
 .steps_item .grids .item-image .line {
-  margin-top: 33px;
+  margin-top: 10px;
   border: solid 0.5px #898989;
-  margin-bottom: 38px;
+  margin-bottom: 10px;
 }
 .steps_item .grids .item-image p {
   font-size: 1.75rem;
@@ -445,9 +444,9 @@ ul, li {
   margin-bottom: 1.688rem;
 }
 .steps_item__two .grids .item-image .line {
-  margin-top: 33px;
+  margin-top: 10px;
   border: solid 0.5px #898989;
-  margin-bottom: 38px;
+  margin-bottom: 10px;
 }
 .steps_item__two .grids .item-image p {
   font-size: 1.75rem;
@@ -765,6 +764,76 @@ footer .footer-wrap .section-two a:hover {
   margin-bottom: 0;
 }
 
+.process__desc {
+  font-size: 27px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: Jost;
+  color: #000000;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.our-process {
+  position: relative;
+  margin-top: 60px;
+}
+.our-process img {
+  width: 100%;
+}
+.our-process::before {
+  left: -100px;
+  content: "";
+  width: 100%;
+  background: url(../assets/images/shadow-banner.png);
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  top: 128px;
+  /* transform: rotate(202deg); */
+  background-size: contain;
+}
+.our-process .process-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.our-process .process-text h2 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.services_desc {
+  margin-bottom: 3rem;
+}
+.services_desc h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: #000000;
+}
+.services_desc h4 {
+  font-size: 1.5rem;
+  color: #ff703f;
+  margin-bottom: 0.5rem;
+}
+.services_desc .services__description {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.services_desc .services__description p {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: Jost;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
 .container {
   max-width: 90%;
   margin: 0 auto;
@@ -773,6 +842,18 @@ footer .footer-wrap .section-two a:hover {
 
 .text-center {
   text-align: center;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
 }
 
 @media (max-width: 1200px) {
@@ -929,6 +1010,9 @@ footer .footer-wrap .section-two a:hover {
   .dreams-section .dreams-sec .dreams-img img {
     width: 100%;
   }
+  .steps_item {
+    padding: 3rem 0 2rem 0;
+  }
   .steps_item .grids {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -937,6 +1021,13 @@ footer .footer-wrap .section-two a:hover {
   }
   .steps_item .grids .item-image h2 {
     font-size: 2.375rem;
+  }
+  .steps_item .grids .item-image .line {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .steps_item__two {
+    padding: 3rem 0 2rem 0;
   }
   .steps_item__two .grids {
     grid-template-columns: repeat(1, 1fr);
@@ -949,6 +1040,10 @@ footer .footer-wrap .section-two a:hover {
   }
   .steps_item__two .grids .item-image h2 {
     font-size: 2.375rem;
+  }
+  .steps_item__two .grids .item-image .line {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
   .sustainability__sec .row {
     grid-template-columns: repeat(1, 1fr);
@@ -993,7 +1088,8 @@ footer .footer-wrap .section-two a:hover {
     flex-direction: column;
   }
   footer .footer-wrap .logo img {
-    width: 130px;
+    max-width: 130px;
+    width: 100%;
   }
   footer .footer-wrap .section-two {
     margin-top: 1.5rem;
@@ -1001,5 +1097,9 @@ footer .footer-wrap .section-two a:hover {
   }
   footer .footer-wrap .section-two a {
     padding: 0;
+  }
+  .process__desc {
+    font-size: 1.75rem;
+    margin: 0 0;
   }
 }/*# sourceMappingURL=main.css.map */
