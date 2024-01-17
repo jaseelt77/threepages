@@ -70,21 +70,18 @@ section{
     position: relative;
     width: 100%;
     
-    .row {
-   .content{
-    h1{
-        font-size: 45px;
-        width: 100%;
-    }
-   }
-   .content__image{
-    img{
-        width: 100%;
-    }
-    &::before{
-        // display: none;
-    }
-   }
+  .row {
+        .content{
+                h1{
+                    font-size: 45px;
+                    width: 100%;
+                }
+        }
+        .content__image{
+            img{
+                width: 100%;
+            }
+        }
     }
 
 }
@@ -122,6 +119,23 @@ section{
         }
     }
    }
+   .dreams-section{
+    .dreams-sec{
+        .dreams-content p {
+            font-size: 1.5rem;
+        }
+    }
+   }  
+   
+
+    footer {
+        .footer-wrap {
+            .section-two {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+    }
 }
 @media (max-width: $r-768){
     .animated {
@@ -219,6 +233,7 @@ section{
                 }
             }
             .dreams-img{
+                text-align: center;
                 img{width: 100%;}
             }
         }
@@ -294,14 +309,14 @@ section{
             }
         }
     }
-.sustainability__sec{
-    h2{
-        font-size: 2rem;
+    .sustainability__sec{
+        h2{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 1.6rem;
+        }
     }
-    h4{
-        font-size: 1.6rem;
-    }
-}
     .paralax{
         height: 540px;
         .paralax-window{
@@ -344,6 +359,10 @@ section{
     font-size: 1.75rem;
     margin: 0 0;
 }
+.our-process{
+    .process-text h2{font-size: 2rem;}
+} 
+.other-links a {font-size: 14px;}
 
 }
 

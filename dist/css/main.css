@@ -295,7 +295,7 @@ ul, li {
   margin-bottom: 37px;
   margin-right: 13px;
   margin-left: 7px;
-  border: solid 0.5px #898989;
+  border: solid 0.5px #dedede;
 }
 .dreams-section .dreams-sec .dreams-content p {
   font-size: 27px;
@@ -339,6 +339,7 @@ ul, li {
   font-size: 1.75rem;
   line-height: 1.5;
   font-weight: 400;
+  font-family: Jost;
   color: #000000;
   text-align: center;
   font-family: Jost;
@@ -397,6 +398,7 @@ ul, li {
   line-height: 1.5;
   font-weight: 400;
   font-family: Jost;
+  font-family: Jost;
   line-height: 1.5;
   color: #000000;
 }
@@ -453,6 +455,7 @@ ul, li {
   line-height: 1.5;
   font-weight: 400;
   font-family: Jost;
+  font-family: Jost;
   line-height: 1.5;
   color: #000000;
 }
@@ -484,6 +487,7 @@ ul, li {
   line-height: 1.5;
   font-weight: 400;
   font-family: Jost;
+  font-family: Jost;
   font-size: 28px;
 }
 
@@ -502,6 +506,7 @@ ul, li {
   font-size: 2.5rem;
   line-height: 1.5;
   font-weight: 400;
+  font-family: Jost;
   font-family: Urbanist;
   font-weight: 500;
   text-align: center;
@@ -522,6 +527,7 @@ ul, li {
   font-size: 1.75rem;
   line-height: 1.5;
   font-weight: 400;
+  font-family: Jost;
   color: #000000;
   font-family: Jost;
 }
@@ -592,6 +598,7 @@ ul, li {
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 400;
+  font-family: Jost;
   color: #000000;
 }
 .our_blogs .blogs__wrapper .blog-1 .content-box .fas {
@@ -657,6 +664,7 @@ footer .footer-wrap .section-two a {
   line-height: 1.5;
   font-weight: 400;
   font-family: Jost;
+  font-family: Jost;
   font-weight: 300;
   line-height: 3.61;
   letter-spacing: 1.8px;
@@ -678,6 +686,9 @@ footer .footer-wrap .section-two a:hover {
   font-family: Jost;
   color: #000000;
   margin-right: 15px;
+}
+.other-links a:hover {
+  color: #ff703f;
 }
 
 .our-story {
@@ -790,7 +801,7 @@ footer .footer-wrap .section-two a:hover {
   height: 100%;
   z-index: -1;
   background-repeat: no-repeat;
-  top: 128px;
+  top: 35%;
   /* transform: rotate(202deg); */
   background-size: contain;
 }
@@ -804,6 +815,7 @@ footer .footer-wrap .section-two a:hover {
   font-size: 3rem;
   color: #fff;
   font-weight: 600;
+  text-align: center;
 }
 
 .services_desc {
@@ -830,8 +842,50 @@ footer .footer-wrap .section-two a:hover {
   line-height: 1.5;
   font-weight: 400;
   font-family: Jost;
+  font-family: Jost;
   line-height: 1.5;
   margin-bottom: 10px;
+}
+
+.material_section {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.material_section .dreams-sec {
+  align-items: flex-start;
+}
+
+.dreams-section h2 {
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-weight: 600;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.material_refine {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.material_refine .grids {
+  justify-content: center;
+  align-items: center;
+}
+.material_refine .grids .item-image h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.material_refine .description p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: Jost;
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -844,6 +898,14 @@ footer .footer-wrap .section-two a:hover {
   text-align: center;
 }
 
+.line {
+  margin-top: 27px;
+  margin-bottom: 37px;
+  margin-right: 13px;
+  margin-left: 7px;
+  border: solid 0.5px #dedede;
+}
+
 .pt-5 {
   padding-top: 5rem;
 }
@@ -854,6 +916,10 @@ footer .footer-wrap .section-two a:hover {
 
 .pb-0 {
   padding-bottom: 0;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
 }
 
 @media (max-width: 1200px) {
@@ -919,6 +985,13 @@ footer .footer-wrap .section-two a:hover {
   .our_blogs .blogs__wrapper .blog-1 .content-box {
     width: 100%;
     left: 14px;
+  }
+  .dreams-section .dreams-sec .dreams-content p {
+    font-size: 1.5rem;
+  }
+  footer .footer-wrap .section-two {
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) {
@@ -1006,6 +1079,9 @@ footer .footer-wrap .section-two a:hover {
   }
   .dreams-section .dreams-sec .dreams-content p {
     font-size: 16px;
+  }
+  .dreams-section .dreams-sec .dreams-img {
+    text-align: center;
   }
   .dreams-section .dreams-sec .dreams-img img {
     width: 100%;
@@ -1101,5 +1177,11 @@ footer .footer-wrap .section-two a:hover {
   .process__desc {
     font-size: 1.75rem;
     margin: 0 0;
+  }
+  .our-process .process-text h2 {
+    font-size: 2rem;
+  }
+  .other-links a {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=main.css.map */
