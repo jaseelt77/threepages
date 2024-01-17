@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Urbanist:wght@300;800&display=swap");
 * {
-  font-family: "Jost", sans-serif;
   font-family: "Urbanist", sans-serif;
   margin: 0;
   padding: 0;
@@ -8,7 +7,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: all 0.2s linear;
 }
 
 html {
@@ -51,6 +49,12 @@ ul, li {
   display: flex;
   align-items: center;
 }
+.header .navbar-menu .navbar #hamberger-menu-btn {
+  padding-left: 1rem;
+}
+.header .navbar-menu .navbar .fas {
+  font-size: 1.9rem;
+}
 .header .navbar-menu .navbar a {
   font-size: 1.125rem;
   color: #000000;
@@ -75,6 +79,7 @@ ul, li {
 }
 .header .navbar-menu .navbar #close-navbar:hover {
   transform: rotate(90deg);
+  color: #ff703f;
 }
 .header .navbar-menu .navbar .dropdown {
   position: relative;
@@ -129,7 +134,6 @@ ul, li {
   gap: 3rem;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
   position: relative;
   width: 100%;
 }
@@ -143,9 +147,6 @@ ul, li {
   font-size: 93px;
   font-weight: 500;
   color: #000;
-}
-.home__banner .row .content h1 span {
-  display: block;
 }
 .home__banner .row .headline-image img {
   max-width: 450px;
@@ -708,7 +709,6 @@ footer .footer-wrap .section-two a:hover {
   z-index: -1;
   background-repeat: no-repeat;
   top: 128px;
-  /* transform: rotate(202deg); */
   background-size: contain;
 }
 
@@ -802,7 +802,6 @@ footer .footer-wrap .section-two a:hover {
   z-index: -1;
   background-repeat: no-repeat;
   top: 35%;
-  /* transform: rotate(202deg); */
   background-size: contain;
 }
 .our-process .process-text {
@@ -920,6 +919,10 @@ footer .footer-wrap .section-two a:hover {
 
 .pb-1 {
   padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 1200px) {
