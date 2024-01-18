@@ -161,11 +161,11 @@ ul, li {
   top: 0;
 }
 .home__banner .row .circle-image img {
-  transform: translate(94px, -60px);
+  transform: translate(53px, -50px);
   top: 0;
   bottom: 27px;
-  max-width: 120px;
   width: 100%;
+  max-width: 170px;
 }
 .home__banner .row .right-image img {
   max-width: 120px;
@@ -207,9 +207,9 @@ ul, li {
   bottom: 0;
 }
 .home__banner .row .triangle-down img {
-  max-width: 265px;
-  transform: translate(95px, -2px);
   width: 100%;
+  max-width: 307px;
+  transform: translate(48px, 6px);
 }
 .home__banner .row .headline-title {
   position: absolute;
@@ -230,20 +230,8 @@ ul, li {
 }
 .home__banner .row .content__image img {
   position: relative;
-  max-width: 400px;
   object-fit: contain;
   width: 100%;
-}
-
-[data-aos=my-fade-up] {
-  transform: translate3d(0, 100px, 0);
-  opacity: 0;
-  transition-property: transform, opacity;
-}
-
-[data-aos=my-fade-up].aos-animate {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
 }
 
 .btn {
@@ -845,6 +833,16 @@ footer .footer-wrap .section-two a:hover {
   line-height: 1.5;
   margin-bottom: 10px;
 }
+.services_desc .services__image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+  gap: 2rem;
+  box-sizing: border-box;
+  gap: 1rem;
+}
+.services_desc .services__image .item {
+  max-width: 320px;
+}
 
 .material_section {
   max-width: 1120px;
@@ -925,6 +923,17 @@ footer .footer-wrap .section-two a:hover {
   padding-bottom: 2rem;
 }
 
+.pt-3 {
+  padding-top: 3rem;
+}
+
+@media (min-width: 1366px) {
+  .home__banner .row .circle-image img {
+    transform: translate(10px, -50px);
+    width: 100%;
+    max-width: 170px;
+  }
+}
 @media (max-width: 1200px) {
   section {
     padding: 4rem 5%;
