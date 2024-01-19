@@ -25,6 +25,7 @@
    box-sizing: border-box;
    outline: none; border:none;
    text-decoration: none;
+   transition: all .2s linear;
 }
 html {
     font-size: 90.5%;
@@ -585,13 +586,12 @@ img{
                 img {
                     width: 100%;
                     object-fit: contain;
+                    transition: all .2s linear;
                 }
            }
           .content-box{
             background-color: #fff;
             border-left: 5px solid $orange;
-            padding: 1rem;
-            width: 250px;
             border: solid 0.5px #c2c1c1;
             padding: 2rem 1rem;
             width: 298px;
@@ -629,7 +629,72 @@ img{
         }
     }
 }
+.blog__sec{
+  .content-box{
 
+  }
+}
+.blog__sec{
+    padding: 3rem 0;
+    position: relative;
+    .blog__sec__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 1120px;  
+        margin: 0 auto;
+        .blog__item{
+            .image{
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                    transition: all 0.2s linear;
+                }
+            }
+            
+        }
+        .content-box{
+            padding: 1rem 0.5rem;
+            width: 100%;
+            .date{
+              span{
+                font-size: 1rem;
+                font-family: 'Jost', sans-serif;
+               font-weight: 600;
+               margin-bottom: 20px;
+              }  
+            }
+            h4{
+                margin-top: 10px;
+                font-size: 1.6rem;
+                margin-bottom: 10px;
+                color: $orange;
+            }
+            p{
+
+            }
+        }
+    }
+}
+
+.blog__desc{
+    padding: 3rem 0;
+    .date{
+        margin-bottom: 2rem;
+        span{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    }
+    .desc{
+        p{
+           @include graphText(1.7rem);
+        }
+        .blog_images{
+            padding: 1rem 0;
+        }
+    }
+}
 footer{
     padding: 3rem 0;
     border-top: 1px solid $subtitle;

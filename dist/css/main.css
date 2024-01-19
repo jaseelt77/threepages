@@ -7,6 +7,7 @@
   outline: none;
   border: none;
   text-decoration: none;
+  transition: all 0.2s linear;
 }
 
 html {
@@ -560,12 +561,11 @@ ul, li {
 .our_blogs .blogs__wrapper .blog-1 .image img {
   width: 100%;
   object-fit: contain;
+  transition: all 0.2s linear;
 }
 .our_blogs .blogs__wrapper .blog-1 .content-box {
   background-color: #fff;
   border-left: 5px solid #ff703f;
-  padding: 1rem;
-  width: 250px;
   border: solid 0.5px #c2c1c1;
   padding: 2rem 1rem;
   width: 298px;
@@ -601,6 +601,58 @@ ul, li {
 }
 .our_blogs .blogs__wrapper .blog-1:hover img {
   transform: scale(1.1);
+}
+
+.blog__sec {
+  padding: 3rem 0;
+  position: relative;
+}
+.blog__sec .blog__sec__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.blog__sec .blog__sec__wrapper .blog__item .image img {
+  width: 100%;
+  object-fit: contain;
+  transition: all 0.2s linear;
+}
+.blog__sec .blog__sec__wrapper .content-box {
+  padding: 1rem 0.5rem;
+  width: 100%;
+}
+.blog__sec .blog__sec__wrapper .content-box .date span {
+  font-size: 1rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.blog__sec .blog__sec__wrapper .content-box h4 {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #ff703f;
+}
+.blog__desc {
+  padding: 3rem 0;
+}
+.blog__desc .date {
+  margin-bottom: 2rem;
+}
+.blog__desc .date span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.blog__desc .desc p {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: Jost;
+}
+.blog__desc .desc .blog_images {
+  padding: 1rem 0;
 }
 
 footer {
@@ -927,6 +979,10 @@ footer .footer-wrap .section-two a:hover {
   padding-top: 3rem;
 }
 
+.mt-3 {
+  margin-top: 3rem;
+}
+
 @media (min-width: 1366px) {
   .home__banner .row .circle-image img {
     transform: translate(10px, -50px);
@@ -1195,5 +1251,13 @@ footer .footer-wrap .section-two a:hover {
   }
   .other-links a {
     font-size: 14px;
+  }
+  .blog__sec {
+    padding: 1rem 0;
+    position: relative;
+  }
+  .blog__sec .blog__sec__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
