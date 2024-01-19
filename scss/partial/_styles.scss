@@ -627,6 +627,7 @@ img{
             }
             
         }
+       
     }
 }
 .blog__sec{
@@ -643,6 +644,10 @@ img{
         gap: 30px;
         max-width: 1120px;  
         margin: 0 auto;
+        a{
+            text-decoration: none;
+            color: $black;
+        }
         .blog__item{
             .image{
                 img{
@@ -671,7 +676,8 @@ img{
                 color: $orange;
             }
             p{
-
+                @include graphText(1.2rem);
+                font-family: 'Jost', sans-serif;
             }
         }
     }
@@ -693,6 +699,32 @@ img{
         .blog_images{
             padding: 1rem 0;
         }
+    }
+  
+    .share{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        .text{
+            strong{
+                font-size: 1.3rem;
+            }
+        }
+        .icons{
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 28px;
+                border-radius: 2px;
+            }
+            
+         } 
     }
 }
 footer{

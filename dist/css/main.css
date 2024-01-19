@@ -614,6 +614,10 @@ ul, li {
   max-width: 1120px;
   margin: 0 auto;
 }
+.blog__sec .blog__sec__wrapper a {
+  text-decoration: none;
+  color: #000000;
+}
 .blog__sec .blog__sec__wrapper .blog__item .image img {
   width: 100%;
   object-fit: contain;
@@ -635,6 +639,14 @@ ul, li {
   margin-bottom: 10px;
   color: #ff703f;
 }
+.blog__sec .blog__sec__wrapper .content-box p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: Jost;
+  font-family: "Jost", sans-serif;
+}
+
 .blog__desc {
   padding: 3rem 0;
 }
@@ -653,6 +665,28 @@ ul, li {
 }
 .blog__desc .desc .blog_images {
   padding: 1rem 0;
+}
+.blog__desc .share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.blog__desc .share .text strong {
+  font-size: 1.3rem;
+}
+.blog__desc .share .icons {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.blog__desc .share .icons img {
+  width: 28px;
+  border-radius: 2px;
 }
 
 footer {
