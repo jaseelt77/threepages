@@ -719,14 +719,23 @@ img{
             gap: 1rem;
             align-items: center;
             justify-content: center;
-            img{
-                width: 28px;
-                border-radius: 2px;
+            li{
+               
+                a{
+                    img{
+                        width: 28px;
+                        border-radius: 2px;
+                    }
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
             }
             
          } 
     }
 }
+
 footer{
     padding: 3rem 0;
     border-top: 1px solid $subtitle;
@@ -954,11 +963,12 @@ img{width: 100%;}
         }
     }
     .services__image{
-       @include grid(42rem);
+       @include grid(20rem);
         box-sizing: border-box;
-        gap: 1rem;
-        .item{
-            max-width: 320px;
+        gap: 0.5rem;
+        margin-top: 2rem;
+        .item img{
+            max-width: 100%;
         }
     }
     
