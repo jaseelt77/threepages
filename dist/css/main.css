@@ -650,12 +650,17 @@ ul, li {
 .blog__desc {
   padding: 3rem 0;
 }
+.blog__desc .blog-title h2 {
+  font-size: 3.2rem;
+  text-align: center;
+}
 .blog__desc .date {
+  margin-top: 2rem;
   margin-bottom: 2rem;
+  text-align: right;
 }
 .blog__desc .date span {
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .blog__desc .desc p {
   font-size: 1.7rem;
@@ -1297,5 +1302,9 @@ footer .footer-wrap .section-two a:hover {
   .blog__sec .blog__sec__wrapper {
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
+  }
+  .blog__sec .blog-title h2 {
+    font-size: 2rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
