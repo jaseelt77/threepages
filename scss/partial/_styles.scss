@@ -1,4 +1,4 @@
-  @import './mixins';
+  @import './mixins.scss';
   @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Urbanist:wght@300;800&display=swap');
   @mixin grid($val) {
     display: grid;
@@ -16,6 +16,7 @@
     line-height: 1.5;
     font-weight: 400;
     font-family: Jost;
+    font-size: 1.2rem;
  }
 
 
@@ -79,6 +80,12 @@ img{
                     color: $orange;
                     background-color: $navhover;
                 }
+                &.active{
+                    font-weight: 500;
+                    color: $orange !important;
+                    text-decoration: underline;
+                }
+               
             } 
 
             #close-navbar{
@@ -335,9 +342,8 @@ img{
             border: solid 0.5px $line;
           } 
           p{
-            font-size: 27px;
             font-family: Jost;
-            font-size: 28px;
+            font-size: 1.2rem;
             font-weight: 400;
             line-height: 1.5;
             color: $black;
@@ -416,7 +422,7 @@ img{
             h4{
                 @include titleText(2rem);
                 font-family: Urbanist;
-                font-weight: 800;
+                font-weight: 500;
                 line-height: 1.29;
                 color: $orange;
                 margin-bottom: 1.688rem;
@@ -427,7 +433,7 @@ img{
                 margin-bottom: 10px;
             }
             p{
-                @include graphText(1.75rem);
+                @include graphText(1.2rem);
                 font-family: Jost;
                 line-height: 1.5;
                 color: $black;
@@ -468,7 +474,7 @@ img{
             h4{
                 @include titleText(2.125rem);
                 font-family: Urbanist;
-                font-weight: 800;
+                font-weight: 500;
                 line-height: 1.29;
                 color: $orange;
                 margin-bottom: 1.688rem;
@@ -862,9 +868,10 @@ footer{
             font-size: 24px;
             color: $orange;
             margin-bottom: 10px;
+            font-weight: 500;
         }
         p{
-            font-size: 23px;
+            font-size: 1.2rem;
             font-family: Jost;
             line-height: 1.5;
             color: $black;
@@ -898,16 +905,16 @@ padding-top: 50px;
     h3{
         @include titleText(2.125rem);
         font-family: Urbanist;
-        font-weight: 800;
+        font-weight: 500;
         line-height: 1.29;
         color: $orange;
-        margin-bottom: 0;
+        margin-bottom: 5px;
     }
 }
 
 //our process page
 .process__desc{
-    font-size: 27px;
+    font-size: 1.2rem;
     line-height: 1.5;
     font-weight: 400;
     font-family: Jost;
@@ -958,12 +965,14 @@ img{width: 100%;}
     font-size: 1.5rem;
     color: $orange;
     margin-bottom: .5rem;
+    font-weight: 500;
     }
     .services__description{
         max-width: 1020px;
         margin: 0 auto;
+        margin-bottom: 40px;
         p{
-            @include graphText(1.7rem);
+            @include graphText(1.2rem);
             font-family: Jost;
            line-height: 1.5;
            margin-bottom: 10px;
@@ -1006,7 +1015,7 @@ img{width: 100%;}
         .item-image{
             h4{
                 @include titleText(2rem);
-                font-weight: 600;
+
             }
         }
         
