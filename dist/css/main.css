@@ -1004,7 +1004,7 @@ footer .footer-wrap .section-two a:hover {
 .contact-form .contact-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .contact-form .contact-wrapper .contact-title h1 {
   font-size: 50px;
@@ -1058,6 +1058,9 @@ footer .footer-wrap .section-two a:hover {
   color: #000000;
   font-weight: 400;
 }
+.form .conatct-forms .contact-names input:focus {
+  background-color: #ddebef;
+}
 .form .conatct-forms .contact-names .conatct-f label {
   display: block;
   text-transform: uppercase;
@@ -1088,6 +1091,9 @@ footer .footer-wrap .section-two a:hover {
   font-size: 1.2rem;
   color: #000000;
   font-weight: 500;
+}
+.form .conatct-forms .contact-email input:focus {
+  background-color: #ddebef;
 }
 .form .conatct-forms .contact-email input::placeholder {
   font-family: Jost;

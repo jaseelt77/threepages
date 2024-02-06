@@ -1032,7 +1032,7 @@ img{width: 100%;}
     .contact-wrapper{
         display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     .contact-title{
         h1{
             font-size: 50px;
@@ -1086,6 +1086,9 @@ img{width: 100%;}
                     color: $black;
                     font-weight: 400;
                 }
+                &:focus{
+                    background-color: #ddebef;
+                }
             }
             .conatct-f{
                 label{
@@ -1120,6 +1123,9 @@ img{width: 100%;}
                 font-size: 1.2rem;
                 color: $black;
                 font-weight: 500;
+                &:focus{
+                    background-color: #ddebef;
+                }
                 &::placeholder{
                     font-family: Jost;
                     font-size: 1.2rem;
