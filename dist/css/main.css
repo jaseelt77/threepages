@@ -998,6 +998,104 @@ footer .footer-wrap .section-two a:hover {
   margin-bottom: 1rem;
 }
 
+.contact-form {
+  padding: 3rem 0;
+}
+.contact-form .contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact-form .contact-wrapper .contact-title h1 {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+.contact-form .contact-wrapper .contact-title p {
+  font-family: Jost;
+  font-size: 1.2rem;
+}
+.contact-form .contact-wrapper .conatct-info p {
+  font-family: Jost;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.form {
+  margin-bottom: 3rem;
+  background-image: url("/dist/assets/images/contact-form.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 3rem 0;
+}
+.form .conatct-forms {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #fff;
+}
+.form .conatct-forms .contact-names {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.form .conatct-forms .contact-names input {
+  flex: 1;
+  min-width: 275px;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 16px 10px;
+  font-family: Jost;
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 500;
+}
+.form .conatct-forms .contact-names input::placeholder {
+  font-family: Jost;
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 400;
+}
+.form .conatct-forms .contact-names .conatct-f label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.form .conatct-forms .contact-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 570px;
+  margin: 0 auto;
+}
+.form .conatct-forms .contact-email label {
+  text-transform: uppercase;
+  align-self: flex-start;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.form .conatct-forms .contact-email input {
+  flex: 1;
+  min-width: 570px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 16px 10px;
+  margin-bottom: 25px;
+  font-family: Jost;
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 500;
+}
+.form .conatct-forms .contact-email input::placeholder {
+  font-family: Jost;
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 400;
+}
+
 .container {
   max-width: 90%;
   margin: 0 auto;
@@ -1324,5 +1422,22 @@ footer .footer-wrap .section-two a:hover {
   .blog__sec .blog-title h2 {
     font-size: 2rem;
     text-align: center;
+  }
+  .contact-form .contact-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .contact-form .contact-wrapper .contact-title h1 {
+    font-size: 32px;
+  }
+  .form .conatct-forms .contact-names {
+    display: block;
+  }
+  .form .conatct-forms .contact-names input {
+    min-width: 100%;
+  }
+  .form .conatct-forms .contact-email input {
+    min-width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -509,8 +509,37 @@ section{
     }
 }
 
-      
 
+
+    .contact-form{
+        .contact-wrapper{
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            .contact-title{
+                h1{
+                    font-size: 32px;
+                }   
+            }    
+        }
+    }
+
+    
+    .form{
+        .conatct-forms{
+            .contact-names{
+                display: block;
+                input{
+                    min-width: 100%;
+                }
+            }
+            .contact-email{
+                input{
+                    min-width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $r-640){
